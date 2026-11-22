@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6f9">
+  <meta name="description" content="Review supplier quotes against buyer requirements and shortlist with GenLayer.">
+  <title>QuoteGate · Vendor quote screening</title>
+  <link rel="icon" href="./assets/quotegate.png">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="./" aria-label="QuoteGate home"><img src="./assets/quotegate.png" width="38" height="38" alt=""><span>QuoteGate</span></a>
+      <div class="top-actions">
+        <div class="switch" aria-label="Data mode"><button type="button" id="demo" aria-pressed="true">Demo</button><button type="button" id="studio" aria-pressed="false">StudioNet</button></div>
+        <button class="secondary wallet" id="wallet" type="button" hidden>Connect wallet</button>
+      </div>
+    </div>
+  </header>
+  <main class="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <div><h1 id="page-title">Vendor quote review</h1><p>Compare offers against the same budget, deadline and scope.</p></div>
+      <button id="new-request" class="primary" type="button">New request</button>
+    </section>
+    <div class="network-note" id="network-note"></div>
+    <div class="work-grid">
+      <aside class="request-list" aria-label="Buyer requests">
+        <h2>Requests</h2>
+        <div id="requests"></div>
+      </aside>
+      <section class="board" id="board" aria-label="Selected request" aria-busy="true"></section>
+    </div>
+    <footer><span>QuoteGate</span><a id="contract-link" target="_blank" rel="noopener noreferrer" hidden>View StudioNet contract</a></footer>
+  </main>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="dialog">
+    <form id="action-form" novalidate>
+      <div class="dialog-header"><h2 id="dialog-title"></h2><button type="button" class="icon-button" id="close-dialog" aria-label="Close dialog">×</button></div>
+      <div id="dialog-body"></div>
+      <p id="form-error" class="error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancel-dialog">Cancel</button><button type="submit" class="primary" id="submit-dialog"></button></div>
+    </form>
+  </dialog>
+</body>
+</html>

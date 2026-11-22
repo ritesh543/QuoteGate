@@ -1,0 +1,116 @@
+{
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "contract": "QuoteGate",
+  "source": "contracts/quote_gate.py",
+  "source_sha256": "de6772ea976c5c5f3f8a37671ab7d88f0cfb9ae45164ef71028764108ce40693",
+  "deployer": "0xf9380DB171fD5e8f0EdA028C228945A41A844Cb4",
+  "transaction_hash": "0x57c1d5de66ca1ae404f44e0b95127bb549fd8f0f80859f6c880e345c36eb38d5",
+  "status": "FINALIZED",
+  "transaction_explorer": "https://explorer-studio.genlayer.com/tx/0x57c1d5de66ca1ae404f44e0b95127bb549fd8f0f80859f6c880e345c36eb38d5",
+  "address": "0x399ddf5935744F3B0f6a6092Eb48628D4B0F0Ae6",
+  "execution": "SUCCESS",
+  "contract_explorer": "https://explorer-studio.genlayer.com/address/0x399ddf5935744F3B0f6a6092Eb48628D4B0F0Ae6",
+  "source_matches": true,
+  "get_overview": {
+    "project": "QuoteGate",
+    "requests": 0
+  },
+  "smoke_transactions": [
+    {
+      "method": "open_request",
+      "hash": "0x7662fbda10d16cbf0020b5226651fcb8ef861666e028fa3801a74ededc9af076",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x7662fbda10d16cbf0020b5226651fcb8ef861666e028fa3801a74ededc9af076",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "submit_quote",
+      "hash": "0xf9d8e734ea18d4fb4d0980675cd91fcd561f1ece0649bbb30ccdc3ee29651780",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xf9d8e734ea18d4fb4d0980675cd91fcd561f1ece0649bbb30ccdc3ee29651780",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "submit_quote",
+      "hash": "0xa375aacf27024c129c5536c378107d5407b1d9c2dadeee7d81bee019336288bb",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xa375aacf27024c129c5536c378107d5407b1d9c2dadeee7d81bee019336288bb",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "review_quote",
+      "hash": "0xe6ecbca27f9d73785e2d6bf42b125e1332943a421e3af31152cac9d3dba49ead",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xe6ecbca27f9d73785e2d6bf42b125e1332943a421e3af31152cac9d3dba49ead",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "review_quote",
+      "hash": "0x91a0d2ead89941163cc2acc65062b052da15c5d5b9b77ab212a2cf1c4313bee0",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x91a0d2ead89941163cc2acc65062b052da15c5d5b9b77ab212a2cf1c4313bee0",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "shortlist_quote",
+      "hash": "0x7331e2763e8348398c0380483115cb4de4151572bc9cdd1cd9c59f4748c5c74f",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x7331e2763e8348398c0380483115cb4de4151572bc9cdd1cd9c59f4748c5c74f",
+      "execution": "SUCCESS"
+    }
+  ],
+  "smoke_reviews": [
+    {
+      "id": "RFQ-0001-Q01",
+      "verdict": "FIT",
+      "checks": [
+        {
+          "decision": "COVERED",
+          "excerpt": "We will supply 250 printed training packs.",
+          "id": 1
+        },
+        {
+          "decision": "COVERED",
+          "excerpt": "Delivery to the venue is included.",
+          "id": 2
+        },
+        {
+          "decision": "COVERED",
+          "excerpt": "All covers will use 120 gsm cover stock.",
+          "id": 3
+        }
+      ],
+      "budget_ok": true,
+      "date_ok": true
+    },
+    {
+      "id": "RFQ-0001-Q02",
+      "verdict": "OUT_OF_SCOPE",
+      "checks": [
+        {
+          "decision": "COVERED",
+          "excerpt": "We will supply 250 printed training packs.",
+          "id": 1
+        },
+        {
+          "decision": "EXCLUDED",
+          "excerpt": "Delivery to the venue is explicitly excluded.",
+          "id": 2
+        },
+        {
+          "decision": "COVERED",
+          "excerpt": "All covers will use 120 gsm cover stock.",
+          "id": 3
+        }
+      ],
+      "budget_ok": true,
+      "date_ok": true
+    }
+  ],
+  "smoke_shortlist": {
+    "request_id": "RFQ-0001",
+    "quote_id": "RFQ-0001-Q01",
+    "sha256": "235370541bce47dfff1c2eed8a72b945bb31860c2eeee9eb485bd95ccfe48a34"
+  }
+}

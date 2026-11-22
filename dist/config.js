@@ -1,0 +1,1 @@
+export const contract = {"address":"0x399ddf5935744F3B0f6a6092Eb48628D4B0F0Ae6","explorer":"https://explorer-studio.genlayer.com/address/0x399ddf5935744F3B0f6a6092Eb48628D4B0F0Ae6","tx":"https://explorer-studio.genlayer.com/tx/"};

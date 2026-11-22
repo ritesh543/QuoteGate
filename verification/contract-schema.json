@@ -1,0 +1,139 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "get_overview": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_request": {
+      "params": [
+        [
+          "request_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_shortlist_proof": {
+      "params": [
+        [
+          "quote_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "list_requests": {
+      "params": [
+        [
+          "offset",
+          "int"
+        ],
+        [
+          "limit",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": [
+        {
+          "$rep": "dict"
+        }
+      ]
+    },
+    "open_request": {
+      "params": [
+        [
+          "title",
+          "string"
+        ],
+        [
+          "currency",
+          "string"
+        ],
+        [
+          "budget_minor",
+          "int"
+        ],
+        [
+          "deadline",
+          "string"
+        ],
+        [
+          "requirements",
+          [
+            {
+              "$rep": "string"
+            }
+          ]
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "review_quote": {
+      "params": [
+        [
+          "quote_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "shortlist_quote": {
+      "params": [
+        [
+          "quote_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "submit_quote": {
+      "params": [
+        [
+          "request_id",
+          "string"
+        ],
+        [
+          "supplier",
+          "string"
+        ],
+        [
+          "price_minor",
+          "int"
+        ],
+        [
+          "delivery_on",
+          "string"
+        ],
+        [
+          "terms",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}
